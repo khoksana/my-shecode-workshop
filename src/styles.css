@@ -1,0 +1,101 @@
+body {
+  font-family: "Roboto Slab", serif;
+  padding: 0 20px;
+  background-color: #f0fbff;
+}
+
+hr {
+  width: 93%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 0 15px;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.card {
+  color: #475053;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 0;
+}
+
+.current-city {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.current-t {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.week-days {
+  padding: 16px 0;
+}
+
+.current-city {
+  text-align: left;
+  font-size: 35px;
+  top: 20px;
+}
+
+.current-day {
+  position: relative;
+  top: 25px;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.current-precipitation {
+  position: relative;
+  padding-left: 160px;
+  top: -23px;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.search-city,
+.button-search-city {
+  border-radius: 15px;
+}
+
+.search-city:hover {
+  border-radius: 15px;
+  background-color: #f0fbff;
+  color: #475053;
+}
+
+.favorite-cities {
+  position: relative;
+  top: 10px;
+  text-align: left;
+}
+
+.current-icon {
+  font-size: 100px;
+  color: #fdd835;
+}
+
+.week-icon {
+  font-size: 35px;
+}
+
+.capitalize-first {
+  text-transform: lowercase;
+}
+
+.capitalize-first::first-letter {
+  text-transform: uppercase;
+}

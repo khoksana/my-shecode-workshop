@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7f8fe7e295.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Wireframe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <ul class="favorite-cities">
+            <li>Berlin</li>
+            <li>Kyiv</li>
+            <li>London</li>
+            <li>New York</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <form id="search-form">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control search-city"
+                placeholder="🔍 Enter a city"
+                aria-describedby="button-addon4"
+                id="search-city-input"
+              />
+              <div class="input-group-append" id="button-addon4">
+                <input
+                  class="btn btn-outline-secondary button-search-city"
+                  type="submit"
+                  id="enter-button"
+                  value="Enter"
+                />
+                <input
+                  class="btn btn-outline-secondary button-search-city"
+                  type="submit"
+                  id="current-city-button"
+                  value="Current city"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4">
+              <p><strong>Current temperature</strong></p>
+              <p class="current-t">
+                <span id="current-temperature"> 21° </span>
+                <span id="current-unit"> C°</span>
+              </p>
+              <i class="fas fa-sun current-icon"></i>
+            </div>
+            <div class="col-8 border-left">
+              <h1 class="card-title current-city" id="city-header">Berlin</h1>
+
+              <div class="current-day" id="current-day-time">Tuesday 21:30</div>
+              <div class="current-day capitalize-first" id="description">
+                Cloudy
+              </div>
+              <div class="current-precipitation">
+                Precipitation:
+                <span id="precipitation">82% </span>
+                <br />
+                Wind:
+                <span id="wind-speed">3km/h </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row week-days">
+          <div class="col">21°C</div>
+          <div class="col">
+            <i class="fas fa-sun week-icon monday"></i>
+          </div>
+          <div class="col">Monday</div>
+
+          <div class="w-100">
+            <hr />
+          </div>
+          <div class="col">21°C</div>
+          <div class="col">
+            <i class="fas fa-sun week-icon tuesday"></i>
+          </div>
+          <div class="col">Tuesday</div>
+
+          <div class="w-100">
+            <hr />
+          </div>
+          <div class="col">21°C</div>
+          <div class="col">
+            <i class="fas fa-sun week-icon wednesday"></i>
+          </div>
+          <div class="col">Wednesday</div>
+
+          <div class="w-100"><hr /></div>
+          <div class="col">21°C</div>
+          <div class="col">
+            <i class="fas fa-sun week-icon thursday"></i>
+          </div>
+          <div class="col">Thursday</div>
+
+          <div class="w-100">
+            <hr />
+          </div>
+          <div class="col">21°C</div>
+          <div class="col">
+            <i class="fas fa-sun week-icon friday"></i>
+          </div>
+          <div class="col">Friday</div>
+
+          <div class="w-100"><hr /></div>
+          <div class="col">21°C</div>
+          <div class="col">
+            <i class="fas fa-cloud week-icon saturday"></i>
+          </div>
+          <div class="col">Saturday</div>
+
+          <div class="w-100"><hr /></div>
+          <div class="col">21°C</div>
+          <div class="col">
+            <i class="fas fa-cloud week-icon sunday"></i>
+          </div>
+          <div class="col">Sunday</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
